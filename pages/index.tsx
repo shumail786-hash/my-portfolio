@@ -7,14 +7,12 @@ const HomePage = () => {
   const openNavbar = () => setNavbar(true)
   const closeNavbar = () => setNavbar(false)
   return (
-    <div className='overflow-x-hidden'>
       <div>
         {/* Navbar */}
         <MobileNavbar navbar={navbar} closeNavbar={closeNavbar}/>
         <Navbar openNavbar = {openNavbar} />
         {/* Hero Section */}
         <Hero />
-      </div>
     </div>
   )
 }

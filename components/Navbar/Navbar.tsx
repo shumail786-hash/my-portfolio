@@ -6,7 +6,7 @@ interface Props {
 }
 const Navbar = ({ openNavbar } : Props) => {
   return (
-    <div className='w-[100%] top-0 h-[12vh] bg-[#141c27] shadow-md uppercase'>
+    <div className='w-full top-0 h-[12vh] bg-[#141c27] shadow-md uppercase'>
       <div className='flex items-center justify-between w-[80%] mx-auto h-[100%]'>
         <h1 className='flex-[0.6] cursor-pointer text-[25px] text-white font-bold tracking-widest capitalize'>Shu
             <span className='text-yellow-300 tracking-widest lowercase'>Mail</span>
@@ -17,8 +17,8 @@ const Navbar = ({ openNavbar } : Props) => {
         <div className='nav-links'>Skills</div>
         <div className='nav-links'>Contact</div>
 
-      <div onClick={openNavbar}>
-        <Bars3Icon className='w-[2rem] md:hidden h-[2rem] cursor-pointer text-yellow-300'/> 
+      <div onClick={openNavbar} className='w-[2rem] md:hidden h-[2rem] cursor-pointer text-yellow-300 border'>
+        <Bars3Icon/> 
       </div>
       </div>
     </div>

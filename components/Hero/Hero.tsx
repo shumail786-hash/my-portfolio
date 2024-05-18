@@ -2,8 +2,10 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div>
-      Hero
+    <div className='w-full py-3'>
+        <h1 className='text-3xl text-center w-full border'>
+            Under Development
+        </h1>
     </div>
   )
 }
