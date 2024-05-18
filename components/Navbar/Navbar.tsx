@@ -1,5 +1,5 @@
 import React from 'react'
-import { Bars3Icon } from '@heroicons/react/24/solid'
+import { RxHamburgerMenu } from "react-icons/rx";
 
 interface Props {
     openNavbar : () => void;
@@ -19,7 +19,7 @@ const Navbar = ({ openNavbar } : Props) => {
 
         <div className='md:hidden cursor-pointer flex items-center justify-center w-[2rem] h-[2rem]'
           onClick={openNavbar}>
-          <Bars3Icon className='w-full h-full text-yellow-300' />
+          <RxHamburgerMenu className='w-full h-full text-yellow-300' />
         </div> 
       </div>
     </div>

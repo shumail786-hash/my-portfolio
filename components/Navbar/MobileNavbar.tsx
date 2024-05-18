@@ -1,5 +1,5 @@
-import { XMarkIcon } from '@heroicons/react/24/solid' // Correct import path if needed
 import React from 'react'
+import { IoClose } from "react-icons/io5";
 
 interface Props {
     navbar: boolean;
@@ -19,7 +19,7 @@ const MobileNavbar = ({ navbar, closeNavbar } : Props) => {
         <div className="absolute top-4 w-[90%] flex items-center justify-between cursor-pointer">
             <div></div>
             <div onClick={closeNavbar} className='cursor-pointer flex items-center justify-center w-[2rem] h-[2rem]'>
-                <XMarkIcon className='w-full h-full text-yellow-400'/>
+                <IoClose className='w-full h-full text-yellow-400'/>
             </div> 
         </div>
     </div>
