@@ -17,9 +17,9 @@ const Navbar = ({ openNavbar } : Props) => {
         <div className='nav-links'>Skills</div>
         <div className='nav-links'>Contact</div>
 
-      <div onClick={openNavbar}>
-        <Bars3Icon className='w-[2rem] p-1 md:hidden cursor-pointer text-yellow-300'/> 
-      </div>
+        <Bars3Icon className='w-[2rem] md:hidden cursor-pointer text-yellow-300'
+        onClick={openNavbar}
+        /> 
       </div>
     </div>
   )
