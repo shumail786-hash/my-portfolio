@@ -1,4 +1,4 @@
-import { XMarkIcon } from '@heroicons/react/16/solid'
+import { XMarkIcon } from '@heroicons/react/24/solid' // Correct import path if needed
 import React from 'react'
 
 interface Props {
@@ -17,11 +17,9 @@ const MobileNavbar = ({ navbar, closeNavbar } : Props) => {
             <div className="nav-links-mobile">Contact</div>
         </div>
         <div className="absolute top-4 w-[90%] flex items-center justify-between cursor-pointer">
-            <div className=''>
-                
-            </div>
-            <div onClick={closeNavbar} className='cursor-pointer w-[2rem] p-1 text-yellow-400'>
-                <XMarkIcon/> 
+            <div></div>
+            <div onClick={closeNavbar} className='cursor-pointer flex items-center justify-center w-[2rem] h-[2rem]'>
+                <XMarkIcon className='w-full h-full text-yellow-400'/>
             </div> 
         </div>
     </div>
