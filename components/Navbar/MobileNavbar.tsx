@@ -20,7 +20,7 @@ const MobileNavbar = ({ navbar, closeNavbar } : Props) => {
             <div className=''>
                 
             </div>
-            <div onClick={closeNavbar} className='cursor-pointer w-[2.1rem] h-[2rem] text-yellow-400'>
+            <div onClick={closeNavbar} className='cursor-pointer w-[2rem] p-1 text-yellow-400'>
                 <XMarkIcon/> 
             </div> 
         </div>
